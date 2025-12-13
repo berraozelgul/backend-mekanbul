@@ -9,47 +9,102 @@
       "name": "addVenue",
       "id": "0b90e993-d631-430c-b10b-31071380162b",
       "request": {
-        "method": "POST",
+        "method": "GET",
         "header": [],
         "body": {
           "mode": "urlencoded",
           "urlencoded": [
             {
-              "key": "author",
-              "value": "Berra",
+              "key": "name",
+              "value": "Cam Kafe",
               "type": "text",
-              "uuid": "d7e3a342-99d1-4230-ba7c-8193844f1e35"
+              "uuid": "c37bcf59-da23-4b2e-8764-4b48316755cb"
             },
             {
-              "key": "rating",
-              "value": "4",
+              "key": "address",
+              "value": "Süleyman Demirel Üniversitesi",
               "type": "text",
-              "uuid": "d193a204-e688-49f9-bc37-e7a3f99144e1"
+              "uuid": "d7e220bf-ffdd-4003-93e6-c2310ae39135"
             },
             {
-              "key": "text",
-              "value": "Gayet başarılı buldum.",
+              "key": "foodanddrink",
+              "value": "Çay,Ekler,Döner",
               "type": "text",
-              "uuid": "832903f4-5d51-4532-b694-c7f841eed6da"
+              "uuid": "3baf7f1c-88ff-4bca-98a3-0686f703a796"
             },
             {
-              "key": "date",
-              "value": "13.12.2025",
+              "key": "lat",
+              "value": "37",
               "type": "text",
-              "uuid": "801496ac-d373-4753-ae5f-f195b6ba1b0b"
+              "uuid": "d7bb0dc6-ec2d-4813-b911-e0957c76887e"
+            },
+            {
+              "key": "long",
+              "value": "35",
+              "type": "text",
+              "uuid": "b7a1f58b-4ef3-4105-9ad2-d921cea93cd9"
+            },
+            {
+              "key": "day1",
+              "value": "Pazartesi-Cuma",
+              "type": "text",
+              "uuid": "b3e978ba-ce06-4e20-80f6-1a763af68bbe"
+            },
+            {
+              "key": "open1",
+              "value": "9",
+              "type": "text",
+              "uuid": "9cb7df75-2650-4034-a857-b0385528c117"
+            },
+            {
+              "key": "close1",
+              "value": "11",
+              "type": "text",
+              "uuid": "ecc87857-4d27-45c9-b0e1-f778c91ff02f"
+            },
+            {
+              "key": "isClosed1",
+              "value": "false",
+              "type": "text",
+              "uuid": "8773d717-e53d-4763-9341-a051843a8399"
+            },
+            {
+              "key": "open2",
+              "value": "9",
+              "type": "text",
+              "uuid": "67d6f977-9f3b-4ef1-a7c4-39f244c030c9"
+            },
+            {
+              "key": "close2",
+              "value": "11",
+              "type": "text",
+              "uuid": "5c8a1fe9-d2c8-494c-8e69-ab74b4e0bd78"
+            },
+            {
+              "key": "isClosed2",
+              "value": "false",
+              "type": "text",
+              "uuid": "34502895-8173-45b5-84f3-bd7282930942"
+            },
+            {
+              "key": "day2",
+              "value": "Cumartesi",
+              "type": "text",
+              "uuid": "11bce3ae-d8d8-4bae-8538-eea6847024e0"
             }
           ]
         },
         "url": {
-          "raw": "https://backend-mekanbul-omega.vercel.app/",
+          "raw": "https://backend-mekanbul-fqrh.vercel.app/api/venues",
           "protocol": "https",
           "host": [
-            "backend-mekanbul-omega",
+            "backend-mekanbul-fqrh",
             "vercel",
             "app"
           ],
           "path": [
-            ""
+            "api",
+            "venues"
           ]
         }
       },
@@ -78,6 +133,13 @@
         }
       },
       "response": []
+    }
+  ],
+  "variable": [
+    {
+      "id": "cd4ede12-7e48-4e2b-b489-8f6d489e9856",
+      "key": "Base_URL",
+      "value": ""
     }
   ]
 }
