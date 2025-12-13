@@ -56,30 +56,32 @@ const listVenues = function (req, res) {
 
 const addVenue = async function (req, res) {
 
-    try {
-await Venue.create({
-...req.body,
-coordinates: [req.body. lat, req.body. long], 
-    hours: [
-{
-days: req.body.days1,
-open: req.body.open1,
-close: req.body.close1,
-isClosed: req.body.isClosed1,
-},
-{
-days: req.body.days2,
-open: req.body.open2, close: req.body.close2,
-isClosed: req.body.isClosed2,
-},
-    ]
-}).then(function (response) {
-createResponse(res, "201", response);
-});
-} catch (error) {
-createResponse(res, "400", error);
+
+    try{
+        await Venue.create({
+            ...req.body,
+            coordinates:[req.body.lat,req.body.long],
+            hours:[{
+                day:req.body.day1,
+                open:req.body.open1,
+                close:req.body.close1,
+                isClosed:req.body.isClosed1
+            },{
+                day:req.body.day2,
+                open:req.body.open2,
+                close:req.body.close2,
+                isClosed:req.body.isClosed2
+            }
+            ]
+        }).then(function (venue) {
+            createResponse(res,201,venue);
+        });
+    }
+    catch(err){
+        createResponse(res,404,err);
+    }
+
 }
-};
 const getVenue = async function (req, res) {
     try {
         await Venue.findById(req.params.venueid).exec().then(function (venue) {

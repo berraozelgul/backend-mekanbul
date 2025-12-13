@@ -1,0 +1,83 @@
+{
+  "info": {
+    "_postman_id": "0f4c7f7c-70e6-4a6a-a347-375e16483ebf",
+    "name": "Şadiye Berra Özelgül",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "addVenue",
+      "id": "0b90e993-d631-430c-b10b-31071380162b",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "author",
+              "value": "Berra",
+              "type": "text",
+              "uuid": "d7e3a342-99d1-4230-ba7c-8193844f1e35"
+            },
+            {
+              "key": "rating",
+              "value": "4",
+              "type": "text",
+              "uuid": "d193a204-e688-49f9-bc37-e7a3f99144e1"
+            },
+            {
+              "key": "text",
+              "value": "Gayet başarılı buldum.",
+              "type": "text",
+              "uuid": "832903f4-5d51-4532-b694-c7f841eed6da"
+            },
+            {
+              "key": "date",
+              "value": "13.12.2025",
+              "type": "text",
+              "uuid": "801496ac-d373-4753-ae5f-f195b6ba1b0b"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://backend-mekanbul-omega.vercel.app/",
+          "protocol": "https",
+          "host": [
+            "backend-mekanbul-omega",
+            "vercel",
+            "app"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "id": "c98f07d8-fde5-41f2-a6df-5d45c2170ac0",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "id": "9fc103b8-f8b6-43a6-a0c0-9d6d46bef9d6",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
