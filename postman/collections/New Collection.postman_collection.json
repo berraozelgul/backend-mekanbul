@@ -133,12 +133,29 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "New Request",
+      "id": "6ea00bf6-5d61-4e96-bde9-9be13820403b",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
     }
   ],
   "variable": [
     {
-      "id": "cd4ede12-7e48-4e2b-b489-8f6d489e9856",
+      "id": "1b005f87-7bd0-4009-bf3b-f4cb1c482633",
       "key": "Base_URL",
+      "value": ""
+    },
+    {
+      "id": "86ace428-6a4b-47bb-84f9-20f9bb2ffdd6",
+      "key": "MONGODB_URI",
       "value": ""
     }
   ]
